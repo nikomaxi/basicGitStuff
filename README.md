@@ -35,6 +35,38 @@ $ git log
 Lists version history for the current branch
 
 
+# Git Branching
+
+### Branch Erstellen
+Erstellen einer neuen Branch:
+```sh
+$ git branch BRANCHNAME
+```
+
+Um auf diese Branch zu wechseln benutze:
+```sh
+$ git checkout BRANCHNAME
+```
+
+Dies kann auch Kombiniert werden:
+```sh
+$ git checkout -b BRANCHNAME
+```
+Nachdem man auf die Branch gewechselt hat, kann man wie üblich seine Arbeit machen und die Dateien mit 
+```sh
+$ git add DATEIEN
+$ git commit -m "Nachricht"
+```
+auf Gitlab hochladen.
+
+### Branch auf Gitlab Hochladen
+
+Damit die Branch die du erstellt hast auch für andere des Teams sichtbar ist, muss man die Branch auf Gitlab hochladen
+```sh
+$ git push -u origin BRANCHNAME
+```
+
+
 ### Branch Zusammenführen
 Wenn man fertig ist und die Branch mit der Master Zusammenführen möchte, benutzt man:
 ```sh
