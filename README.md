@@ -35,3 +35,16 @@ $ git log
 Lists version history for the current branch
 
 
+### Branch Zusammenführen
+Wenn man fertig ist und die Branch mit der Master Zusammenführen möchte, benutzt man:
+```sh
+$ git checkout master
+$ git merge BRANCHNAME
+```
+Eventuell müssen Dateien zusammengeführt werden die es in der master schon gibt und es zu einem Konflikt kommt. Diese muss man manuell Zusammenführen.
+
+### Branch Löschen
+Wenn alles reibungslos Funktioniert hat kann man die gemergte Branch löschen:
+```sh
+$ git branch -d BRANCHNAME
+```
