@@ -1,7 +1,6 @@
 This Repository includes all code of Programming 3 group 2
 
-Some basic git stuff:
----------------------
+# Some basic git stuff
 
 ```sh
 $ git status
